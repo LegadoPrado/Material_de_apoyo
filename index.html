@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .padre {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(61, 152, 152);
+      }
+
+      .caja1 {
+        background-color: aqua;
+        width: 100%;
+        height: 56px;
+      }
+      .caja2 {
+        display: flex;
+        height: calc(100vh - 56px);
+      }
+      .caja3 {
+        width: 50%;
+        background-color: blue;
+      }
+      .caja4 {
+        width: 50%;
+        background-color: bisque;
+      }
+
+      .titulo{
+        height: 10%;
+        background-color: brown;
+    }
+    
+    .acordion{
+        height: 80%;
+        background-color: rgb(22, 68, 106);
+        
+      }
+      .botonera{
+        height: 10%;
+        background-color: chartreuse;
+        display: flex;
+      }
+
+      .btn{width: 50%;}
+
+    </style>
+  </head>
+  <body>
+    <div class="padre">
+      <div class="caja1">1</div>
+
+      <div class="caja2">
+        <div class="caja3">3</div>
+        <div class="caja4">
+          <div class="titulo">
+            <h2>titulo</h2>
+          </div>
+          <div class="acordion">acordiones</div>
+          <div class="botonera">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
